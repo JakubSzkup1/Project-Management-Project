@@ -1,0 +1,74 @@
+<head>  
+   <link rel="stylesheet" type="text/css" href="style.css"/>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>  
+
+
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Login Form</title>    
+    <link rel="stylesheet" type="text/css" href="style.css">   
+</head>    
+<body>    
+        
+    <div class="login">    
+    <form id="login" method="get" action="login.php">    
+        <label><b>User Name     
+        </b>    
+        </label>    
+        <input type="text" name="Uname" id="Uname" placeholder="Username">    
+        <br><br>    
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+        <br><br>    
+        <input type="button" name="log" id="log" onlick = "check(this.form)" value="Log In Here">       
+        <br><br>    
+        <input type="checkbox" id="check">    
+        <span>Remember me</span>    
+        <br><br>
+        Forgot <a href="#">Password</a>  
+        
+    </form>  
+        <style>
+body {
+  background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+</style>
+        
+</div> 
+    
+      <script language ="javascript">
+		
+		
+        function check(form)
+        {
+			
+            if(form.Uname.value == "GMIT" && form.Pass.value == "123")
+            {
+				
+                location.replace("./home.html")
+        }
+
+        else
+        {
+			
+            alert("The username and password you entered don't match")
+        }
+
+    }
+    
+
+    </script>
+</body>    
+</html> 
+
+ 
